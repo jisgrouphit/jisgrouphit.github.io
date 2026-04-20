@@ -209,3 +209,90 @@ li {
   min-width: 260px;
 }
 
+/* ── Student grid ── */
+.students-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.stu-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.07);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.stu-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.12);
+}
+
+.stu-photo-wrap {
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  display: flex;
+  justify-content: center;
+  padding: 24px 0 16px;
+}
+
+.stu-photo-wrap img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+.stu-info {
+  padding: 16px 20px 20px;
+  flex: 1;
+}
+
+.stu-name {
+  margin: 0 0 8px;
+  font-size: 18px;
+  color: #0d47a1;
+}
+
+.stu-badge {
+  display: inline-block;
+  padding: 3px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.badge-master {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.badge-undergrad {
+  background: #fff3e0;
+  color: #e65100;
+}
+
+.stu-list {
+  padding-left: 0;
+  list-style: none;
+  margin: 0;
+  font-size: 13.5px;
+  color: #334;
+}
+
+.stu-list li {
+  padding: 5px 0;
+  border-bottom: 1px solid #f0f4fa;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+.stu-list li:last-child {
+  border-bottom: none;
+}
+
